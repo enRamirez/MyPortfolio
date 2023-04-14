@@ -1,0 +1,50 @@
+.button{
+    border: solid 1px;
+    background: transparent;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    font-size: large;
+    
+    
+}
+
+.button:hover {
+    animation: pulse 1.5s infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+body{ 
+    height: 500px;
+    background: content-box radial-gradient(purple 20%, blue 30%, black, grey);
+    background-color: silver;
+    background-repeat: no-repeat;
+    
+}
+p{ 
+    color: white;
+}
+#Me{
+    position: relative; left: 25%; top: 75px;
+}
+#skills{
+    position: relative; left: 60%; top: 75px;
+}
+#projects{
+    position: relative; left: -100px; top: 200px;
+}
+#contact{
+    position: relative;left: 325px; top: 200px;
+}
+#aboutMe{
+    color: aliceblue;
+}
+
+.MySkills{
+    position: ;
+}
