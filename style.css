@@ -26,25 +26,23 @@ body{
     background-repeat: no-repeat;
     
 }
-p{ 
-    color: white;
-}
+
 #Me{
-    position: relative; left: 25%; top: 75px;
+    position: absolute; left: 25%; top: 10%;
 }
 #skills{
-    position: relative; left: 60%; top: 75px;
+    position: absolute; left: 60%; top: 10%;
 }
 #projects{
-    position: relative; left: -100px; top: 200px;
+    position: absolute; left: 11%; top: 40%;
 }
 #contact{
-    position: relative;left: 325px; top: 200px;
+    position: absolute;left: 73%; top: 40%;
 }
 #aboutMe{
     color: aliceblue;
 }
 
-/* .MySkills{
-    position: ;
-} */
+#MySkills{
+    position: relative; top: 2000px;
+}
