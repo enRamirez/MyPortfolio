@@ -20,10 +20,11 @@
     100% {transform: scale(1);}
 }
 body{ 
-    height: 500px;
+    height: 1000px;
     background: content-box radial-gradient(purple 20%, blue 30%, black, grey);
     background-color: silver;
     background-repeat: no-repeat;
+    position: relative;
     
 }
 
@@ -46,3 +47,5 @@ body{
 #MySkills{
     position: relative; top: 2000px;
 }
+
+/* might need to check out templates */
