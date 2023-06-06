@@ -1,3 +1,33 @@
+.container {
+    
+    display: grid; 
+    grid-template-columns: 8% 84% 8%; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "spaceone bg spacetwo"
+      "spaceone bg spacetwo"
+      "spaceone bg spacetwo"; 
+  }
+  .spaceone { grid-area: spaceone; }
+.spacetwo { grid-area: spacetwo; }
+.bg { grid-area: bg; 
+    height: 1000px;
+    background: content-box radial-gradient(purple 30%, blue 40%, black, grey, grey, grey);
+    background-color: silver;
+    background-repeat: no-repeat;
+    position: static;
+}
+  
+  .spaceone{
+    background: linear-gradient(to right, white 10%, lightgrey 50%, grey 80%);
+  }
+  .spacetwo{
+    background: linear-gradient(to right, grey 10%, lightgrey 50%, white 80%);
+  }
+
+
+
 .button{
     border: solid 1px;
     background: transparent;
@@ -14,24 +44,28 @@
     animation-timing-function: linear;
 
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
 @keyframes pulse {
     0% {transform: scale(1);}
     50% {transform: scale(1.1);}
     100% {transform: scale(1);}
 }
+
 body{ 
-    height: 1000px;
-    background: content-box radial-gradient(purple 20%, blue 30%, black, grey);
-    background-color: silver;
-    background-repeat: no-repeat;
-    position: relative;
+    
+    
     
 }
 
 #Me{
     position: absolute; left: 25%; top: 10%;
 }
-#skills{
+#resume{
     position: absolute; left: 60%; top: 10%;
 }
 #projects{
