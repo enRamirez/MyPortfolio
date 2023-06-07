@@ -45,34 +45,24 @@
   }
   
 
-.meGrid { grid-area: meGrid; }
-.resumeGrid { grid-area: resumeGrid; }
-.projectsGrid { grid-area: projectsGrid; }
-.contactGrid { grid-area: contactGrid; }
+.meGrid { grid-area: meGrid;
+  text-align: right;
+}
+.resumeGrid { grid-area: resumeGrid;}
+.projectsGrid { grid-area: projectsGrid;}
+.contactGrid { grid-area: contactGrid;
+  text-align: right;
+}
+
 
 /* Following codes are to customize the buttons */
 .button{
     border: solid 1px;
     background: transparent;
     border-radius: 10px;
-    /* position: relative; */
     color: white;
     font-size: large;
 }
-
-#me{
-  right: 0;
-}
-
-#projects{
-  right: 0;
-}
-
-#contact{
-  right: 0;
-}
-
-
 
 .button:hover {
     animation: pulse 1.5s infinite;
