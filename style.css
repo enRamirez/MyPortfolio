@@ -30,13 +30,15 @@
 
 /* These codes are for the buttons to be positioned into a grid */
 .buttons {
+    
     position: relative;
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-columns: 20% 20% 20% 20% 20%; 
+    grid-template-rows: 25% 25% 25% 25%; 
     gap: 0px 0px; 
     grid-template-areas: 
-      ". meGrid . resumeGrid ."
+    ". . . . ."
+    ". meGrid . resumeGrid ."
       ". projectsGrid . contactGrid ."
       ". . . . ."; 
   }
@@ -46,20 +48,7 @@
 .projectsGrid { grid-area: projectsGrid; }
 .contactGrid { grid-area: contactGrid; }
 
-#me{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-#resume{
-    position: absolute; left: 60%; top: 10%;
-}
-#projects{
-    position: absolute; left: 11%; top: 40%;
-}
-#contact{
-    position: absolute;left: 73%; top: 40%;
-}
+
 #aboutMe{
     color: aliceblue;
 }
