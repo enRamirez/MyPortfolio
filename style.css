@@ -1,5 +1,5 @@
+/* These codes are for the background color only */
 .container {
-    
     display: grid; 
     grid-template-columns: 8% 84% 8%; 
     grid-template-rows: 1fr 1fr 1fr; 
@@ -9,22 +9,26 @@
       "spaceone bg spacetwo"
       "spaceone bg spacetwo"; 
   }
-  .spaceone { grid-area: spaceone; }
+
+.spaceone { grid-area: spaceone; }
 .spacetwo { grid-area: spacetwo; }
+
 .bg { grid-area: bg; 
     height: 1000px;
     background: content-box radial-gradient(purple 30%, blue 40%, black, grey, grey, grey);
     background-color: silver;
     background-repeat: no-repeat;
     position: static;
-}
+  }
   
-  .spaceone{
-    background: linear-gradient(to right, white 10%, lightgrey 50%, grey 80%);
+.spaceone{
+    background: linear-gradient(to right, white 10%, lightgrey 30%, grey 80%);
   }
-  .spacetwo{
-    background: linear-gradient(to right, grey 10%, lightgrey 50%, white 80%);
+.spacetwo{
+    background: linear-gradient(to right, grey 40%, lightgrey 80%, white 90%);
   }
+
+  /* These codes are for the buttons to be positioned into a grid */
 
 
 
@@ -76,5 +80,3 @@ a{
 #MySkills{
     position: relative; top: 2000px;
 }
-
-/* might need to check out templates */
