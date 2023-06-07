@@ -28,7 +28,22 @@
 
         <div>
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" cols="25"></textarea>
+            <textarea id="message" name="message" rows="5" cols="25" minlength="20" maxlength="500" placeholder= "How'd you hear about me?"></textarea>
+        </div>
+
+        <div>Preferred method of contact back
+            <div>
+              <label for="emailcheck">Email</label>
+              <input type="checkbox" name="emailcheck" id="emailcheck">
+            </div>
+            <div>
+              <label for="phonecheck">Phone Call</label>
+              <input type="checkbox" name="phonecheck" id="phonecheck">
+            </div>
+            <div>
+                <label for="textcheck">Text Back</label>
+                <input type="checkbox" name="textcheck" id="textcheck">
+            </div>
         </div>
 
         <button type="reset">Reset</button>
