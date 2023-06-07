@@ -5,13 +5,13 @@
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-      "spaceone bg spacetwo"
-      "spaceone bg spacetwo"
-      "spaceone bg spacetwo"; 
+      "spaceOne bg spaceTwo"
+      "spaceOne bg spaceTwo"
+      "spaceOne bg spaceTwo"; 
   }
 
-.spaceone { grid-area: spaceone; }
-.spacetwo { grid-area: spacetwo; }
+.spaceOne { grid-area: spaceOne; }
+.spaceTwo { grid-area: spaceTwo; }
 
 .bg { grid-area: bg; 
     height: 1000px;
@@ -21,16 +21,52 @@
     position: static;
   }
   
-.spaceone{
+.spaceOne{
     background: linear-gradient(to right, white 10%, lightgrey 30%, grey 80%);
   }
-.spacetwo{
+.spaceTwo{
     background: linear-gradient(to right, grey 40%, lightgrey 80%, white 90%);
   }
 
-  /* These codes are for the buttons to be positioned into a grid */
+/* These codes are for the buttons to be positioned into a grid */
+.buttons {
+    position: relative;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". meGrid . resumeGrid ."
+      ". projectsGrid . contactGrid ."
+      ". . . . ."; 
+  }
 
+.meGrid { grid-area: meGrid; }
+.resumeGrid { grid-area: resumeGrid; }
+.projectsGrid { grid-area: projectsGrid; }
+.contactGrid { grid-area: contactGrid; }
 
+#me{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#resume{
+    position: absolute; left: 60%; top: 10%;
+}
+#projects{
+    position: absolute; left: 11%; top: 40%;
+}
+#contact{
+    position: absolute;left: 73%; top: 40%;
+}
+#aboutMe{
+    color: aliceblue;
+}
+
+#MySkills{
+    position: relative; top: 2000px;
+}
 
 .button{
     border: solid 1px;
@@ -61,22 +97,4 @@ a{
 }
 
 
-#Me{
-    position: absolute; left: 25%; top: 10%;
-}
-#resume{
-    position: absolute; left: 60%; top: 10%;
-}
-#projects{
-    position: absolute; left: 11%; top: 40%;
-}
-#contact{
-    position: absolute;left: 73%; top: 40%;
-}
-#aboutMe{
-    color: aliceblue;
-}
 
-#MySkills{
-    position: relative; top: 2000px;
-}
