@@ -1,0 +1,38 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e7e9eb;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #e7e9eb:
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #ababab;
+  }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
