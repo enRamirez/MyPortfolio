@@ -1,3 +1,48 @@
+.container {
+    text-align: center;
+    top: 50%;
+    bottom: 50%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.3fr 1.4fr 1.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      "LDRSHIP LDRSHIP LDRSHIP"
+      "aboutMe aboutMe aboutMe"; 
+  }
+.LDRSHIP {
+    text-align: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "l d r s h i p"
+      "leader duty respect ss honor integrity pc"; 
+    grid-area: LDRSHIP; 
+  }
+  .l { grid-area: l; }
+  .d { grid-area: d; }
+  .r { grid-area: r; }
+  .s { grid-area: s; }
+  .h { grid-area: h; }
+  .i { grid-area: i; }
+  .p { grid-area: p; }
+  .leader { grid-area: 2 / 1 / 3 / 2; }
+    .duty { grid-area: 2 / 2 / 3 / 3; }
+    .respect { grid-area: 2 / 3 / 3 / 4; }
+    .selfless-service { grid-area: 2 / 4 / 3 / 5; }
+    .honor { grid-area: 2 / 5 / 3 / 6; }
+    .integrity { grid-area: 2 / 6 / 3 / 7; }
+    .personal-courage { grid-area: 2 / 7 / 3 / 8; }
+    .About-me { grid-area: About-me; }
+
+#full{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    
+}
 
 
 
