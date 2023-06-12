@@ -5,46 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
   <link rel="stylesheet" href="contact.css">
+  <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #8F8F8F;
+        border-radius: 10px;
+        border: solid black 1px;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: #e7e9eb:
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #ababab;
+      }
+</style>
 </head>
 <body>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./results.html">Resume</a></li>
+        <li><a href="./about.html">About Me</a></li>
+        <li><a href="">Projects</a></li>
+      </ul>
     <form action="results.html" method="GET" enctype="multipart/form-data">
         <div class="userinfo">
-            <div>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" >
-            </div>
-
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" >
-            </div>
+            <div><label for="name"><strong>Name</strong></label></div>
+            <div><input type="text" name="name" id="name" ></div>
             
-            <div>
-                <label for="phone">Phone</label>
-                <input type="tel" name="phone" id="phone">
-            </div>
+            <br>
 
+            <div><label for="email"><strong>Email</strong></label></div>
+            <div><input type="email" name="email" id="email"></div>
+
+            <br>
+
+            <div><label for="phone"><strong>Phone</strong></label></div>
+            <div><input type="tel" name="phone" id="phone"></div>
+            
+            <br>
         </div>
+
+        <div><label for="message"><strong>Message</strong></label></div>
+        <div><textarea id="message" name="message" rows="5" cols="25" minlength="20" maxlength="500" placeholder= "How'd you hear about me?"></textarea></div>
+        
+        <br>
+        <br>
+        <br>
+
+        <div><strong>Preferred method of contact back</strong></div>
+        <br>
+        
+        <div>
+            <label for="emailcheck">Email</label>
+            <input type="checkbox" name="emailcheck" id="emailcheck">
+        </div>
+
+        <br>
 
         <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" cols="25" minlength="20" maxlength="500" placeholder= "How'd you hear about me?"></textarea>
+            <label for="phonecheck">Phone Call</label>
+            <input type="checkbox" name="phonecheck" id="phonecheck">
         </div>
 
-        <div>Preferred method of contact back
-            <div>
-              <label for="emailcheck">Email</label>
-              <input type="checkbox" name="emailcheck" id="emailcheck">
-            </div>
-            <div>
-              <label for="phonecheck">Phone Call</label>
-              <input type="checkbox" name="phonecheck" id="phonecheck">
-            </div>
-            <div>
-                <label for="textcheck">Text Back</label>
-                <input type="checkbox" name="textcheck" id="textcheck">
-            </div>
+        <br>
+
+        <div>
+            <label for="textcheck">Text Back</label>
+            <input type="checkbox" name="textcheck" id="textcheck">
         </div>
+
+        <br>
 
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
