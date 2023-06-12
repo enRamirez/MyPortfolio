@@ -1,6 +1,13 @@
 body{
     background-image: url(./aboutMeBG.jpg);
 }
+
+a:visited, a:active, a:link, a:hover{
+  text-decoration: none;
+  color: white;
+
+}
+
 .container {
     color: rgb(255, 255, 255);
     display: grid; 
@@ -27,10 +34,11 @@ body{
     grid-area: LDRSHIP; 
   }
 
-#full{
+.full{
     font-size: large;
     writing-mode: vertical-lr;
     text-orientation: upright;
+    margin: 0 auto;
     
 }
 
@@ -38,7 +46,8 @@ body{
     color: whitesmoke;
     margin-top: 180px;
     font-size: larger;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
